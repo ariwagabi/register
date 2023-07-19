@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.4;
+    text-decoration: none;
+    list-style: none;
+    /* outline: 1px solid red; */
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --bgcolor: rgb(2, 2, 66);
+    --white: #fff;
+    --green: rgb(7, 112, 7);
+    --red: rgb(172, 6, 6);
+}
+
+html,
+body {
+    font-size: 16px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: var(--bgcolor);
+    color: var(--white);
+    height: 100vh;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a {
+    color: inherit;
+}
+
+/* CONTAINER */
+.parent-container {
+    padding: 0 10px 30px;
+    font-size: 1.5rem;
+}
+
+.container {
+    margin: 0 auto 0;
+    display: block;
+}
+/* END */
+
+/* HEADER */
+header {
+    position: sticky;
+    font-size: 2rem;
+}
+
+.header-container {
+    position: relative;
+}
+
+/* NAVIGATION */
+#nav {
+    display: none;
+}
+
+.nav-container {
+    text-align: center;
+}
+/* NAVIGATION ENDS*/
+
+/* ICONS */
+.search-menu-container {
+    display: flex;
+    justify-content: right;
+}
+
+#search-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 45px;
+}
+
+#_search {
+    display: none;
+    position: absolute;
+    right: 50px;
+    top: 2px;
+}
+
+.search-input {
+    border-radius: .3rem;
+    border: 0;
+    height: 25px;
+    width: 200px;
+    background-color: var(--white);
+}
+
+.x-icon {
+    font-size: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 55px;
+    right: 3px;
+}
+
+.menu-icon {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+}
+/* ICONS END */
+
+/* HEADER END */
+
+/* REGISTER */
+.register-container {
+    padding: 4rem 0.5rem 1rem;
+    width: 90%;
+    display: block;
+    margin: 0 auto 0;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+form .form {
+    margin-top: 1rem;
+}
+
+form .form input,
+form .form select {
+    margin-bottom: 10px;
+}
+
+form .form input[type = text],
+form .form input[type = password],
+form .form select {
+    width: 80%;
+    border-radius: 0.3rem;
+    border: 0;
+    height: 40px;
+}
+
+form .form select option {
+    font-size: 1rem;
+}
+
+.btn {
+    display: flex;
+    gap: 10px
+}
+
+form .form input[type = submit],
+form .form input[type = reset] {
+    width: 40%;
+    cursor: pointer;
+    color: var(--white);
+    border-radius: 0.3rem;
+    border: 0;
+    height: 40px;
+}
+
+form input[type=submit] {
+    background: var(--green);
+    opacity: 0.8;
+}
+
+form .form input[placeholder] {
+    padding-left: 1rem;
+}
+
+form input[type=reset] {
+    background: var(--red);
+    opacity: 0.8;
+}
+
+form input[type=submit]:hover,
+form input[type=reset]:hover {
+    opacity: 1;
+}
+
+
+p {
+    font-size: 1rem;
+    padding-top: 1rem;
+    margin-bottom: 10px;
+    width: 80%;
+    display: block;
+}
+
+p a {
+    text-decoration: 1px underline var(--red);
+}
+
+/* MOBILE DEVICES */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        max-width: 480px !important;
+    }
+}
+
+/* TABLETS, IPADS AND SMALL SCREENS */
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .container {
+        width: 70% !important;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem !important;
+    }
+
+    #nav {
+        display: flex;
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .search-menu-container {
+        display: none;
+    }
+}
+
+/* LAPTOPS, DESKTOPS AND LARGE SCREENS */
+@media only screen and (min-width: 1025px) {
+    .container {
+        width: 50% !important;
+    }
+
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        font-size: 1rem !important;
+    }
+
+    #nav {
+        display: flex;
+    }
+
+    .nav-container {
+        display: flex;
+        align-items: center;
+        column-gap: 1rem;
+    }
+
+    .search-menu-container {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 350px) {
+    form input[type=submit],
+    form input[type=reset] {
+        width: 100%;
+    }
+}

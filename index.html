@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sign Up Page By Arinzechukwu GaBi">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Sign Up Page">
+    <meta property="og:image" content="https://ariwagabi.github.io/Sign-Up-Page/images/ariwagabi-logo.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="436">
+    <meta property="og:image:height" content="228">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="shortcut icon" href="images/gabi-logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <section class="parent-container">
+        <header>
+            <div class="container">
+                <div class="header-container">
+                    <div class="logo">
+                        <a href="#">
+                            <picture>
+                                <source media="(min-width: 1200px)" srcset="images/gabi-logo.png">
+                                <img src="images/ariwagabi-logo.png" alt="" style="width: 80px;">
+                            </picture>
+                        </a>
+                    </div>
+
+                    <div id="nav">
+                        <div class="nav-container">
+                            <li><a href="#">Nav Link</a></li>
+                            <li><a href="#">Nav Link</a></li>
+                            <li><a href="#">Nav Link</a></li>
+                            <li><a href="#">Nav Link</a></li>
+                            <li><a href="#">Nav Link</a></li>
+                        </div>
+                    </div>
+
+                    <div class="search-menu-container">
+                        <div class="search-icon">
+                            <a href="javascript:void(0)">
+                                <i onclick="search()" class="fa fa-magnifying-glass" id="search-icon"></i>
+                            </a>
+
+                        </div>
+
+                        <div id="_search">
+                            <label for="search"></label>
+                            <input type="search" name="search" id="search" class="search-input">
+                            <i onclick="hide_search()" class="fa fa-x x-icon"></i>
+                        </div>
+
+                        <div class="menu-icon">
+                            <a href="javascript:void(0)">
+                                <i onclick="nav()" class="fa fa-bars"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="register">
+            <div class="container">
+                <div class="register-container">
+                    <form action="#" method="post" validate>
+                        <div>
+                            <h1>Registration Form</h1>
+                            <h3>Please fill all boxes</h3>
+                        </div>
+
+                        <div class="form">
+                            <label for="fname">First Name :</label><br>
+                            <input type="text" name="fname" id="fname" placeholder="Your first name" required> <br>
+                            <label for="lname">Last Name :</label><br>
+                            <input type="text" name="lname" id="lname" placeholder="Your last name" required> <br>
+                            <label for="pwd">Password : </label><br>
+                            <input type="password" name="pwd" id="pwd" placeholder="Your password" required> <br>
+                            <label for="country">Country : </label><br>
+                            <select name="country" id="country" required>
+                                <option id="">--</option>
+                                <option id="Nigeria">Nigeria</option>
+                                <option id="Ghana">Ghana</option>
+                                <option id="Egypt">Egypt</option>
+                                <option id="Mali">Mali</option>
+                            </select>
+
+                            <p>
+                                <input type="checkbox" name="remember" id="remember"> <span>Remember me</span>
+                            </p>
+
+                            <p>
+                                <input type="checkbox" name="" id="">
+                                <label for=""><span>Please read the <a href="#">Terms &amp; Condition</a>, click
+                                        "Submit" if you wish to proceed</span></label>
+                            </p>
+
+                            <div class="btn">
+                                <input type="submit" value="Submit">
+                                <input type="reset" value="Reset">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
