@@ -219,7 +219,7 @@ p a {
     }
 }
 
-@media only screen and (min-width: 800px) {
+/* @media only screen and (min-width: 800px) {
     .header-container {
         display: flex;
         justify-content: space-between;
@@ -239,7 +239,7 @@ p a {
     .search-menu-container {
         display: none;
     }
-}
+} */
 
 /* LAPTOPS, DESKTOPS AND LARGE SCREENS */
 @media only screen and (min-width: 1025px) {
