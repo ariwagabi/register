@@ -208,7 +208,7 @@ p a {
 /* MOBILE DEVICES */
 @media screen and (max-width: 480px) {
     .container {
-        max-width: 480px !important;
+        max-width: 380px !important;
     }
 }
 
