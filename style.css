@@ -17,6 +17,7 @@
     --white: #fff;
     --green: rgb(7, 112, 7);
     --red: rgb(172, 6, 6);
+    --black: #000;
 }
 
 html {
@@ -156,6 +157,7 @@ form .form select {
 
 form .form select option {
     font-size: 1rem;
+    color: var(--black);
 }
 
 .btn {
