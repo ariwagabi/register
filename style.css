@@ -19,6 +19,12 @@
     --red: rgb(172, 6, 6);
 }
 
+html {
+    overflow-x: hidden;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100
+}
+
 html,
 body {
     font-size: 16px;
@@ -209,7 +215,7 @@ p a {
 /* TABLETS, IPADS AND SMALL SCREENS */
 @media only screen and (min-width: 481px) and (max-width: 1024px) {
     .container {
-        width: 70% !important;
+        max-width: 70% !important;
     }
 }
 
@@ -238,7 +244,7 @@ p a {
 /* LAPTOPS, DESKTOPS AND LARGE SCREENS */
 @media only screen and (min-width: 1025px) {
     .container {
-        width: 50% !important;
+        max-width: 50% !important;
     }
 
     .header-container {
